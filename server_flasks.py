@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify, render_template
-from 浏览器维吉尼亚.cipher_clean import vigenere_encrypt_function, vigenere_decrypt_function
+from cipher_clean import vigenere_encrypt_function, vigenere_decrypt_function
 
 app = Flask(__name__)
 
@@ -33,5 +33,6 @@ def test():
 
 if __name__ == "__main__":
         app.run(debug=False, host='0.0.0.0', port=5000)
+
 
 #代码执行流程：用户点击按钮→前端发送POST请求→FLASK路由接收→调用加密函数→返回JSON结果→前端显示结果
